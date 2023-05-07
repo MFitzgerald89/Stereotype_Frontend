@@ -1,6 +1,52 @@
-.signup {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
 
-box-shadow: -1px -1px 20px black;
+
+
+ form {
+  display: flex;
+  border-radius: 2px;
+  height: 100vh;
+  justify-content: center;
+  align-items:  center;
+  text-align: center;
+  background-image: url(https://media.istockphoto.com/id/171271203/photo/music-in-the-heart.jpg?b=1&s=170667a&w=0&k=20&c=JRCv9oNu77kzVi_aCJUPcA9PE5vGlxs5TUiNQRxX6FU=);
+  // background-position: inherit;
+  background-size: cover;
+  flex-direction: column;
+  // list-style-type: none;
+
+  button {
+    box-shadow: -1px -1px 20px black;
+      color: white;
+      border-radius: 10px;
+      background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
+      // background-blend-mode: luminosity;
+      position: relative;
+      display: block;
+      text-justify: auto;
+      padding: auto ;
+      font: 700 3rem Orbitron, sans-serif;
+      margin-top: 1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-clip: text;
+
+      &:hover {
+        transition: .85s ease-in-out;
+        background-size: auto; 
+        font-size: 48px;
+        text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
+        padding: .05em .05em .05em 0em;
+        box-shadow: -1px -1px 20px white ;         
+      }
+  }
+
+  li, div {
+    padding: 6px 0;
+    opacity: 100%;
+
+    input {
+      box-shadow: -1px -1px 20px black;
       color: white;
       border-radius: 10px;
       background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
@@ -12,19 +58,19 @@ box-shadow: -1px -1px 20px black;
       margin-top: 1em;
       text-decoration: none;
       text-transform: uppercase;
-      background-clip: text;
 
       &:hover {
         transition: .85s ease-in-out;
         background-size: 100%; 
-        font-size: 60px;
-        background-image: url(https://m.media-amazon.com/images/I/81cdIur6z9L._AC_SL1500_.jpg);
+        font-size: auto;
         border-radius: 10px;
         background-position: 100% 75%;
         z-index: 1;
         color:red;
         text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
         padding: .05em .05em .05em 0em;
-        box-shadow: -1px -1px 20px white ;
+        box-shadow: -1px -1px 20px white ;   
       }
     }
+  }
+}

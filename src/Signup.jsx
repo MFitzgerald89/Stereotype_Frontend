@@ -1,9 +1,16 @@
 import axios from "axios";
-import { useState } from "react";
-import "./Header.scoped.scss";
+import { useState, useEffect } from "react";
+import "./Signup.scoped.scss";
 
 export function Signup() {
   const [errors, setErrors] = useState([]);
+
+  const handlePageSwitch = () => {
+    const element = document.getElementById("signup");
+    element.scrollIntoView();
+  };
+
+  useEffect(handlePageSwitch, []);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -32,18 +39,25 @@ export function Signup() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          Name: <input name="name" type="text" className="form-control" />
+          <input name="name" type="text" className="form-control" placeholder="name" />
         </div>
         <div>
-          Email: <input name="email" type="email" className="form-control" />
+          <input name="email" type="email" className="form-control" placeholder="email" />
         </div>
         <div>
-          Password: <input name="password" type="password" className="form-control" />
+          <input name="password" type="password" className="form-control" placeholder="password" />
         </div>
         <div>
-          Password confirmation: <input name="password_confirmation" type="password" className="form-control" />
+          <input
+            name="password_confirmation"
+            type="password"
+            className="form-control"
+            placeholder="re-enter password"
+          />
         </div>
-        <button type="submit">Signup</button>
+        <button id="button" type="submit">
+          Signup
+        </button>
       </form>
     </div>
   );

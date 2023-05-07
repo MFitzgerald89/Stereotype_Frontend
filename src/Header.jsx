@@ -14,7 +14,7 @@ export function Header() {
           <Link to="/about">about</Link>
         </li>
         <li>
-          <Link to="/Signup">sign up</Link>
+          <Link to="/signup">sign up</Link>
         </li>
         <li>
           <Link to="/login">log in</Link>
