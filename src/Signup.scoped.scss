@@ -1,28 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
+.signup {
 
-
-
-ul {
-  display: flex;
-  border-style: groove;
-  border-radius: 2px;
-  height: 100vh;
-  justify-content: center;
-  align-items:  center;
-  text-align: center;
-  background-position: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-direction: column;
-  background-image: url(src/Images/wallpaperflare.com_wallpaper.jpg);
-  list-style-type: none;
-
-  li {
-    padding: 6px 0;
-    opacity: 100%;
-
-    a {
-      box-shadow: -1px -1px 20px black;
+box-shadow: -1px -1px 20px black;
       color: white;
       border-radius: 10px;
       background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
@@ -47,8 +25,6 @@ ul {
         color:red;
         text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
         padding: .05em .05em .05em 0em;
-        box-shadow: -1px -1px 20px white ;         
+        box-shadow: -1px -1px 20px white ;
       }
     }
-  }
-}

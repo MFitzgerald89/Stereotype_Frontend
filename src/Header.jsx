@@ -1,22 +1,23 @@
 import "./Header.scoped.scss";
+import { Link } from "react-router-dom";
 export function Header() {
   return (
     <header>
       <ul>
         <li>
-          <a href="#">home</a>
+          <Link to="/home">home</Link>
         </li>
         <li>
-          <a href="#">matches</a>
+          <Link to="/matches">matches</Link>
         </li>
         <li>
-          <a href="#">about</a>
+          <Link to="/about">about</Link>
         </li>
         <li>
-          <a href="#">sign up</a>
+          <Link to="/Signup">sign up</Link>
         </li>
         <li>
-          <a href="#">log in</a>
+          <Link to="/login">log in</Link>
         </li>
       </ul>
     </header>

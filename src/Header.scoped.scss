@@ -14,7 +14,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  background-image: url(src/wallpaperflare.com_wallpaper.jpg);
+  background-image: url(src/Images/wallpaperflare.com_wallpaper.jpg);
   list-style-type: none;
 
   li {
@@ -44,6 +44,7 @@ ul {
         border-radius: 10px;
         background-position: 100% 75%;
         z-index: 1;
+        color:red;
         text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
         padding: .05em .05em .05em 0em;
         box-shadow: -1px -1px 20px white ;         
