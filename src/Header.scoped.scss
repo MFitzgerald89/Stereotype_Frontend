@@ -15,7 +15,6 @@ ul {
   background-size: cover;
   flex-direction: column;
   background-image: url(src/wallpaperflare.com_wallpaper.jpg);
-  // align-items: start;
   list-style-type: none;
 
   li {
@@ -23,10 +22,10 @@ ul {
     opacity: 100%;
 
     a {
-      box-shadow: -1px -1px 10px firebrick;
+      box-shadow: -1px -1px 20px black;
       color: white;
       border-radius: 10px;
-      background: radial-gradient(white, black);
+      background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
       background-blend-mode: luminosity;
       position: relative;
       display: block;
@@ -46,8 +45,8 @@ ul {
         background-position: 100% 75%;
         z-index: 1;
         text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
-        padding: .05em .05em .05em 0em
-                
+        padding: .05em .05em .05em 0em;
+        box-shadow: -1px -1px 20px white ;         
       }
     }
   }
