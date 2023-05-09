@@ -21,7 +21,7 @@ export function Signup() {
       .then(response => {
         console.log(response.data);
         event.target.reset();
-        window.location.href = "/"; // Change this to hide a modal, redirect to a specific page, etc.
+        window.location.href = "/login"; // Change this to hide a modal, redirect to a specific page, etc.
       })
       .catch(error => {
         console.log(error.response.data.errors);
@@ -31,7 +31,6 @@ export function Signup() {
 
   return (
     <div id="signup">
-      <h1>Sign Up</h1>
       <ul>
         {errors.map(error => (
           <li key={error}>{error}</li>
@@ -39,10 +38,33 @@ export function Signup() {
       </ul>
       <form onSubmit={handleSubmit}>
         <div>
-          <input name="name" type="text" className="form-control" placeholder="name" />
+          <input name="first_name" type="text" className="form-control" placeholder="first name" />
+        </div>
+        <div>
+          <input name="last_name" type="text" className="form-control" placeholder="last name" />
         </div>
         <div>
           <input name="email" type="email" className="form-control" placeholder="email" />
+        </div>
+        <div>
+          <input name="age" type="number" className="form-control" placeholder="age" />
+        </div>
+        <div>
+          <input name="orientation" type="text" className="form-control" placeholder="orientation" />
+        </div>
+        <div>
+          <input
+            name="preferred orientation"
+            type="text"
+            className="form-control"
+            placeholder="preferred orientation"
+          />
+        </div>
+        <div>
+          <input name="religion" type="text" className="form-control" placeholder="religion" />
+        </div>
+        <div>
+          <input name="location" type="text" className="form-control" placeholder="location" />
         </div>
         <div>
           <input name="password" type="password" className="form-control" placeholder="password" />

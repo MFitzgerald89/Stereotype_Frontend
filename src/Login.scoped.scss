@@ -3,10 +3,9 @@
 
 
  form {
-  height: 100vh;
-  object-fit: contain;
   display: flex;
   border-radius: 2px;
+  height: 100vh;
   justify-content: center;
   align-items:  center;
   text-align: center;
@@ -17,14 +16,13 @@
   // list-style-type: none;
 
   button {
-    height: 10%;
-    margin: 1em;
     box-shadow: -1px -1px 20px black;
       color: white;
       border-radius: 10px;
       background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
       // background-blend-mode: luminosity;
-      position:-webkit-sticky;
+      position: relative;
+      display: block;
       text-justify: auto;
       padding: auto ;
       font: 700 3rem Orbitron, sans-serif;
@@ -48,9 +46,6 @@
     opacity: 100%;
 
     input {
-      margin: -1.5em;
-      font-size: 2px;
-      height:120%;
       box-shadow: -1px -1px 20px black;
       color: white;
       border-radius: 10px;
@@ -63,8 +58,6 @@
       margin-top: 1em;
       text-decoration: none;
       text-transform: uppercase;
-
-      
 
       &:hover {
         transition: .85s ease-in-out;
