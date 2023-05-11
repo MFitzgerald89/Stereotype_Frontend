@@ -11,8 +11,8 @@ export function Home() {
           </div>
         </li>
         <li>
-          <Link to="/matches" className="page">
-            matches
+          <Link to="/users" className="page">
+            users
           </Link>
         </li>
         <li>

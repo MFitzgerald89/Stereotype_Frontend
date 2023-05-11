@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Home } from "./Home";
 import { About } from "./About";
-import { Matches } from "./Matches";
+import { Users } from "./Users";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
@@ -26,7 +26,7 @@ export function Content() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/matches" element={<Matches users={users} />} />
+        <Route path="/users" element={<Users users={users} />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logoutlink" element={<LogoutLink />} />

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  
+}
+
+.about-section {
+  grid-column: 1 / 2;
+}
+
+.profile-section {
+  grid-column: 2 / 3;
+}
+
+.profile-picture {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+p {
+  width: 400px;
+  height: 0 auto;
+  font: 200 .75rem Orbitron, sans-serif;
+}

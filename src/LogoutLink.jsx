@@ -10,9 +10,11 @@ export function LogoutLink() {
 
   return (
     <button>
-      <a href="#" onClick={handleClick}>
-        Logout
-      </a>
+      <nav class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand" onClick={handleClick}>
+          Logout
+        </a>
+      </nav>
     </button>
   );
 }
