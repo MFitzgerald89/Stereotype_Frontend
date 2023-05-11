@@ -1,12 +1,15 @@
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
 
 
-
+div {
+  background-color: black;
+}
 ul {
   display: flex;
   border-style: groove;
   border-radius: 2px;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items:  center;
   text-align: center;
@@ -16,6 +19,9 @@ ul {
   flex-direction: column;
   background-image: url(src/Images/wallpaperflare.com_wallpaper.jpg);
   list-style-type: none;
+  @media screen and (max-width: 768px) {
+    /* Custom styles for smaller screens */
+  }
 
   li {
     padding: 6px 0;

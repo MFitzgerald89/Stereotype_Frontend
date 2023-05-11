@@ -1,31 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
 
 .about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  
+  background-color: black;
+  display: flex;
+  color: whitesmoke;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 10px #5f1703, 0 0 10px #969898, 0 0 10px #4d0501;
+  padding-left: 5%;
 }
 
 .about-section {
-  grid-column: 1 / 2;
+  width: 70%;
+  text-align: center;
 }
 
 .profile-section {
-  grid-column: 2 / 3;
+  width: 30%;
+  text-align: center;
 }
 
 .profile-picture {
+  position: relative;
+  object-fit: cover;
   width: 600px;
   height: 600px;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: -1px -1px 60px;
+  padding: 10%;
+  background-image: url(https://img3.goodfon.com/wallpaper/nbig/9/25/music-noty-serdce.jpg);
 }
 
-p {
-  width: 400px;
-  height: 0 auto;
-  font: 200 .75rem Orbitron, sans-serif;
+@media screen and (max-width: 768px) {
+  .about-section,
+  .profile-section {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .profile-picture {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+@media screen and (min-width: 769px) {
+  .about-container {
+    flex-wrap: nowrap;
+  }
+
+  .about-section {
+    width: 70%;
+  }
+
+  .profile-section {
+    width: 30%;
+  }
+
+  .profile-picture {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+}
+
+
+
+
