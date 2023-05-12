@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Home } from "./Home";
+import { PhotosIndex } from "./PhotosIndex";
 import { About } from "./About";
 import { Users } from "./Users";
 import { Signup } from "./Signup";
@@ -21,12 +22,38 @@ export function Content() {
 
   useEffect(handleIndexUsers, []);
 
+  const [photos, setPhotos] = useState([]);
+  const [isPhotosShowVisible, setIsPhotosShowVisible] = useState(false);
+  const [currentPhoto, setCurrentPhoto] = useState({});
+
+  const handleIndexPhotos = () => {
+    console.log("handleIndexPhotos");
+    axios.get("http://localhost:3000/photos.json").then(response => {
+      console.log(response.data);
+      setPhotos(response.data);
+    });
+  };
+
+  const handleShowPhoto = photo => {
+    console.log("handleShowPhoto", photo);
+    setIsPhotosShowVisible(true);
+    setCurrentPhoto(photo);
+  };
+
+  const handleClose = () => {
+    console.log("handleClose");
+    setIsPhotosShowVisible(false);
+  };
+
+  useEffect(handleIndexPhotos, []);
+
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<Users users={users} />} />
+        <Route path="/photos" element={<PhotosIndex photos={photos} onShowPhoto={handleShowPhoto} />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logoutlink" element={<LogoutLink />} />
