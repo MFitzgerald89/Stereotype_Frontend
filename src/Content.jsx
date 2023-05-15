@@ -1,6 +1,5 @@
 import axios from "axios";
 import { Home } from "./Home";
-import { PhotosIndex } from "./PhotosIndex";
 import { About } from "./About";
 import { UserShow } from "./UserShow";
 import { Signup } from "./Signup";
@@ -53,7 +52,6 @@ export function Content() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<UserShow users={users} />} />
-        {/* <Route path="/photos" element={<PhotosIndex photos={photos} onShowPhoto={handleShowPhoto} />} /> */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logoutlink" element={<LogoutLink />} />
