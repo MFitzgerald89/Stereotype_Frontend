@@ -2,23 +2,26 @@
 
 .about-container {
   background-color: black;
-  display: flex;
+  display: grid;
   color: whitesmoke;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   text-shadow: 0 0 10px #5f1703, 0 0 10px #969898, 0 0 10px #4d0501;
   padding-left: 5%;
+  flex-wrap: wrap;
 }
 
 .about-section {
-  width: 70%;
+  grid-column: 1 / 2;
+  width: 100%;
   text-align: center;
 }
 
 .profile-section {
-  width: 30%;
-  text-align: center;
+  grid-column: 2 / 2; /* Update the column span to 1 */
+  border-color: #5f1703;
+  width: 100%;
+  text-align:start;
 }
 
 .profile-picture {
@@ -31,47 +34,49 @@
   margin-top: 40px;
   margin-bottom: 40px;
   box-shadow: -1px -1px 60px;
+  margin-right: 240px;
   padding: 10%;
   background-image: url(https://img3.goodfon.com/wallpaper/nbig/9/25/music-noty-serdce.jpg);
 }
 
-@media screen and (max-width: 768px) {
-  .about-section,
-  .profile-section {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  .profile-picture {
-    width: 80%;
-    max-width: 400px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 1200px) {
   .about-container {
-    flex-wrap: nowrap;
+    flex-wrap:wrap-reverse;
+    display: flex;
+    justify-content:center;
+  }
+
+  .profile-section {
+    flex-wrap: wrap;
+    display: block;
+    grid-column: 2 / 2;
+    width: auto; /* Update the width to 100% */
+    margin-bottom: 20px;
+    z-index: 0; /* Add margin-bottom for spacing */
   }
 
   .about-section {
-    width: 70%;
-  }
-
-  .profile-section {
-    width: 30%;
+    flex-wrap:wrap;
+    grid-column: 1 / 2;
+    z-index: 1;
+    width: 100%;
   }
 
   .profile-picture {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 40px;
+    flex-wrap: wrap;
+    display: block;
+    width: 100%; /* Update the width to 100% */
+    height: auto; /* Remove fixed height */
+    max-height: 30vh; /* Set a maximum height for smaller screens */
+    margin: 0; /* Remove unnecessary margins */
+    padding: 0; /* Remove unnecessary padding */
   }
+}
+
+p {
+  width: 400px;
+  height: auto;
+  font: 200 .75rem Orbitron, sans-serif;
 }
 
 

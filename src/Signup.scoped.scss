@@ -1,83 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+#signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
 
+#signup ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
 
- form {
-  height: 100vh;
-  object-fit: contain;
+#signup ul li {
+  color: red;
+}
+
+#signup form {
   display: flex;
-  border-radius: 2px;
-  justify-content: center;
-  align-items:  center;
-  text-align: center;
-  background-image: url(https://media.istockphoto.com/id/171271203/photo/music-in-the-heart.jpg?b=1&s=170667a&w=0&k=20&c=JRCv9oNu77kzVi_aCJUPcA9PE5vGlxs5TUiNQRxX6FU=);
-  // background-position: inherit;
-  background-size: cover;
   flex-direction: column;
-  // list-style-type: none;
+}
 
-  button {
-    height: 10%;
-    margin: 1em;
-    box-shadow: -1px -1px 20px black;
-      color: white;
-      border-radius: 10px;
-      background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
-      // background-blend-mode: luminosity;
-      position:-webkit-sticky;
-      text-justify: auto;
-      padding: auto ;
-      font: 700 3rem Orbitron, sans-serif;
-      margin-top: 1em;
-      text-decoration: none;
-      text-transform: uppercase;
-      background-clip: text;
+#signup input,
+#signup select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 
-      &:hover {
-        transition: .85s ease-in-out;
-        background-size: auto; 
-        font-size: 48px;
-        text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
-        padding: .05em .05em .05em 0em;
-        box-shadow: -1px -1px 20px white ;         
-      }
-  }
+#signup .genre {
+  position: relative;
+}
 
-  li, div {
-    padding: 6px 0;
-    opacity: 100%;
+#signup .genre select {
+  width: 100%;
+}
 
-    input {
-      margin: -1.5em;
-      font-size: 2px;
-      height:120%;
-      box-shadow: -1px -1px 20px black;
-      color: white;
-      border-radius: 10px;
-      background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
-      background-blend-mode: luminosity;
-      position: relative;
-      display: block;
-      padding: auto ;
-      font: 700 3rem Orbitron, sans-serif;
-      margin-top: 1em;
-      text-decoration: none;
-      text-transform: uppercase;
+#signup .genre div {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-      
+#signup .genre div p {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
 
-      &:hover {
-        transition: .85s ease-in-out;
-        background-size: 100%; 
-        font-size: auto;
-        border-radius: 10px;
-        background-position: 100% 75%;
-        z-index: 1;
-        color:red;
-        text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
-        padding: .05em .05em .05em 0em;
-        box-shadow: -1px -1px 20px white ;   
-      }
-    }
-  }
+#signup #button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#signup #button:hover {
+  background-color: #0056b3;
+}
+
+#signup label {
+  margin-right: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#signup input[type="radio"] {
+  margin-right: 3px;
+}
+
+#signup input[type="file"] {
+  margin-top: 5px;
+}
+
+#signup ::-webkit-file-upload-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#signup ::-webkit-file-upload-button:hover {
+  background-color: #0056b3;
+}
+
+#signup input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#signup input[type="file"]::before {
+  content: 'Select Photo';
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#signup input[type="file"]:hover::before {
+  background-color: #0056b3;
 }
