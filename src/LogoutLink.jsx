@@ -10,7 +10,7 @@ export function LogoutLink() {
 
   return (
     <button>
-      <nav class="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light bg-light">
         <a href="#" class="navbar-brand" onClick={handleClick}>
           Logout
         </a>

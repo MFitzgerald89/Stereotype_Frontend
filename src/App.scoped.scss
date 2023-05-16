@@ -1,11 +1,24 @@
-nav {
+button {
   display: center;
   background-color: black;
+  box-shadow: 0 0 1px white,
+  0 0 2px white,
+  0 0 3px white;
+  text-shadow: 0 0 1px black,
+  0 0 2px black;;
 }
 
 a {
-  display: center;
-  background-color: black;
-color: hotpink;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  object-position: center;
+color: palegreen;
 object-fit: cover;
+}
+
+.input {
+  color: white;
+}
+
+p {
+  color:white;
 }

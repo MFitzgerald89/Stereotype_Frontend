@@ -117,10 +117,8 @@ export function Signup() {
           <input name="location" type="text" className="form-control" placeholder="location" />
         </div>
         <div className="genre" placeholder="Genre">
-          <select name="genre" id="genre" placeholder="Genre" onChange={() => handleGenres(event)}>
-            <option value="" disabled selected hidden>
-              --Pick Genres--
-            </option>
+          <select name="genre" id="genre" onChange={() => handleGenres(event)}>
+            <option defaultValue="">--Pick Genres--</option>
             <option value="rock">Rock</option>
             <option value="country">Country</option>
             <option value="jazz">Jazz</option>
