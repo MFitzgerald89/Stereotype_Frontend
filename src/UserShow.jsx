@@ -21,9 +21,11 @@ export function UserShow(props) {
             {user.gender}/{user.age}/{user.orientation}/{user.location}
           </p>
           <img src={user.photos} className="user-avatar" />
-          <button onClick={() => handleLike(user.id)}>{likeCounts[user.id] ? "Unlike" : "Like"}</button>
+          <button className="like-button" onClick={() => handleLike(user.id)}>
+            {likeCounts[user.id] ? "Unlike" : "Like"}
+          </button>
           <span>
-            {likeCounts[user.id] || 0} {likeCounts[user.id] === 1 ? "like" : "likes"}
+            {likeCounts[user.id] || 0} {likeCounts[user.id] === 1 ? "likes" : "like"}
           </span>
           {user.genres.map(genre => (
             <div key={genre.id} className="genres">

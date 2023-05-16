@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
 
 .about-container {
-  background-color: black;
+  background-image: url(https://images.alphacoders.com/248/248883.jpg);
   display: grid;
-  color: whitesmoke;
+  color: white;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  text-shadow: 0 0 10px #5f1703, 0 0 10px #969898, 0 0 10px #4d0501;
+  font-size: 24px;
+  text-shadow: 0 0 1px #050505, 0 0 2px #040404, 0 0 3px #030303,0 0 4px #050505, 0 0 5px #040404, 0 0 6px #030303, 0 0 7px #050505, 0 0 8px #040404, 0 0 9px #030303,0 0 10px #050505, 0 0 11px #040404, 0 0 12px #030303;
   padding-left: 5%;
   flex-wrap: wrap;
 }
@@ -19,7 +20,7 @@
 
 .profile-section {
   grid-column: 2 / 2; /* Update the column span to 1 */
-  border-color: #5f1703;
+  border-color: black;
   width: 100%;
   text-align:start;
 }
@@ -33,10 +34,16 @@
   object-fit: cover;
   margin-top: 40px;
   margin-bottom: 40px;
-  box-shadow: -1px -1px 60px;
+  box-shadow: -1px -1px 40px black,
+  -1px -1px 40px black,
+  -1px -1px 50px black,
+  -1px -1px 60px black,
+  -1px -1px 65px black,
+  -1px -1px 70px darkgrey,
+  -1px -1px 75px darkgrey,
+  -1px -1px 80px white;
   margin-right: 240px;
   padding: 10%;
-  background-image: url(https://img3.goodfon.com/wallpaper/nbig/9/25/music-noty-serdce.jpg);
 }
 
 @media screen and (max-width: 1200px) {
@@ -50,9 +57,9 @@
     flex-wrap: wrap;
     display: block;
     grid-column: 2 / 2;
-    width: auto; /* Update the width to 100% */
+    width: auto; 
     margin-bottom: 20px;
-    z-index: 0; /* Add margin-bottom for spacing */
+    z-index: 0; 
   }
 
   .about-section {
@@ -65,11 +72,11 @@
   .profile-picture {
     flex-wrap: wrap;
     display: block;
-    width: 100%; /* Update the width to 100% */
-    height: auto; /* Remove fixed height */
-    max-height: 30vh; /* Set a maximum height for smaller screens */
-    margin: 0; /* Remove unnecessary margins */
-    padding: 0; /* Remove unnecessary padding */
+    width: 100%; 
+    height: auto; 
+    max-height: 30vh; 
+    margin: 0; 
+    padding: 0; 
   }
 }
 

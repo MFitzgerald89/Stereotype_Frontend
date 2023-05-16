@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .user-show {
-  background-image: radial-gradient(circle, rgb(245, 210, 33), white);
+  // background-image: radial-gradient(circle, white, rgb(160, 197, 232));
+  background-image: url(https://cdn.wallpapersafari.com/63/21/wU4tOM.jpg);
+  background-size:cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,36 +11,69 @@
 
 .user-card {
   flex-basis: calc(33.33% - 20px);
-  background-image:linear-gradient(rgb(78, 187, 237), black);
+  background-image: url(https://i.pinimg.com/originals/f2/3b/25/f23b259ec77e9dc83ffd2f41deb059e6.jpg);
+  background-position: center;
   padding: 20px;
   border-radius: 10px;
   border-style: ridge;
-  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px black,
+  0 0 10px darkcyan,
+  0 0 15px darkcyan,
+  0 0 20px black,
+  0 0 25px black,
+  0 0 30px black;
   margin: 10px;
   width: 300px;
   height: auto;
 }
 
 .user-avatar {
-  width: 100%;
-  height: auto;
-  border-radius: inherit;
+  float:right;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+  border-radius: 50%;
+  position:sticky;
+  box-shadow: -1px -1px 20px black,
+  -1px -1px 25px black,
+  -1px -1px 30px black,
+  -1px -1px 40px white,
+  -1px -1px 50px black;
+  border-style: solid;
+  border-width: 8px;
+  ;
 }
 
 .user-card h1 {
   font-size: 28px;
   color: white;
-  text-shadow: 2px black;
+  text-shadow: 0 0 6px black,
+  0 0 1px black,
+  0 0 2px black,
+  0 0 3px black,
+  0 0 4px black,
+  0 0 5px black;
   font-family: 'Montserrat', sans-serif;
 }
 
 .user-card p {
   text-transform: capitalize;
   font-size: 16px;
-  color: #6c757d;
+  color: white;
+  text-shadow: 0 0 6px black,
+  0 0 1px black,
+  0 0 2px black,
+  0 0 3px black,
+  0 0 4px black,
+  0 0 5px black,
+  0 0 7px black,
+  0 0 8px black,
+  0 0 9px black,
+  0 0 10px black;
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 .user-card > div {
   margin-top: 10px;
@@ -46,10 +81,12 @@
 
 .user-card > div p {
   font-size: 14px;
-  color: #6c757d;
+  color: white;
 }
 
 .user-card .genres {
+  color: white;
+  text-shadow: none;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
@@ -57,7 +94,7 @@
 
 .user-card .genres p {
   font-size: 14px;
-  color: black;
+  color: white;
   background-color: #f8f9fa;
   padding: 5px 10px;
   border-radius: 5px;
@@ -66,7 +103,7 @@
 }
 
 .user-card button {
-  background-color: rgb(236, 10, 10);
+  background-color: rgb(176, 193, 246);
   color: #fff;
   border:black;
   border-style: groove;
@@ -78,13 +115,27 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .user-card button:hover {
   background-color: rgb(246, 159, 159);
 }
 
 .user-card span {
   font-size: 14px;
-  color: #6c757d;
+  color: white;
+  text-shadow: 0 0 6px black,
+  0 0 1px black,
+  0 0 2px black,
+  0 0 3px black,
+  0 0 4px black,
+  0 0 5px black,
+  0 0 7px black,
+  0 0 8px black,
+  0 0 9px black,
+  0 0 10px black,
+  0 0 11px black;
   margin-top: 5px;
   font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+
 }
