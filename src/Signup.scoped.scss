@@ -1,34 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 #signup {
-  max-width: 400px;
+  color: white;
+  display:grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f9fa;
+  padding: 30px;
+  background-image: url(https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 5px;
+
 }
 
 #signup ul {
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
+  display: flex;
 }
 
 #signup ul li {
   color: red;
+  position: relative;
 }
 
 #signup form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #signup input,
 #signup select {
+  display:block;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  box-shadow: 0 0 5px black,
+  0 0 10px black,
+  0 0 15px black;
+  color: goldenrod;
+  text-shadow: 0 0 1px white,
+  0 0 2px white,
+  0 0 3px gold;
+  font-size: larger;
+  text-transform: uppercase;
 }
 
 #signup .genre {
@@ -45,17 +70,19 @@
 }
 
 #signup .genre div p {
-  background-color: #007bff;
+  background-color: goldenrod;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
 #signup #button {
-  background-color: #007bff;
+  background-color: gold;
   color: #fff;
   padding: 10px;
   border: none;
@@ -65,16 +92,25 @@
 }
 
 #signup #button:hover {
-  background-color: #0056b3;
+  background-color: goldenrod;
+  box-shadow: 0 0 5px white,
+  0 0 10px white,
+  0 0 15px gold;
 }
 
 #signup label {
   margin-right: 5px;
   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px black,
+  0 0 2px black,
+  0 0 3px black;
 }
 
 #signup input[type="radio"] {
   margin-right: 3px;
+  justify-content: center;
+  align-items: center;
 }
 
 #signup input[type="file"] {
@@ -82,7 +118,7 @@
 }
 
 #signup ::-webkit-file-upload-button {
-  background-color: #007bff;
+  background-color: gold;
   color: #fff;
   padding: 10px;
   border: none;
@@ -92,7 +128,7 @@
 }
 
 #signup ::-webkit-file-upload-button:hover {
-  background-color: #0056b3;
+  background-color: goldenrod;
 }
 
 #signup input[type="file"]::-webkit-file-upload-button {
@@ -102,7 +138,7 @@
 #signup input[type="file"]::before {
   content: 'Select Photo';
   display: inline-block;
-  background-color: #007bff;
+  background-color: gold;
   color: #fff;
   padding: 10px;
   border: none;
@@ -112,5 +148,8 @@
 }
 
 #signup input[type="file"]:hover::before {
-  background-color: #0056b3;
+  background-color: goldenrod;
+  box-shadow: 0 0 5px white,
+  0 0 10px white,
+  0 0 15px gold;
 }

@@ -1,3 +1,5 @@
+import "./App.scoped.scss";
+
 export function Footer() {
   return (
     <footer>

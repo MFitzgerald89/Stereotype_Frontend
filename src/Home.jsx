@@ -6,11 +6,6 @@ export function Home() {
     <div>
       <ul>
         <li>
-          <div className="page">
-            <Link to="/">home</Link>
-          </div>
-        </li>
-        <li>
           <Link to="/users" className="page">
             users
           </Link>

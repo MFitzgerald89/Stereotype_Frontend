@@ -5,26 +5,26 @@ div {
   background-color: white;
 }
 ul {
+  padding: 0;
+  margin: 0;
   display: flex;
   border-style: groove;
-  border-radius: 2px;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items:  center;
   text-align: center;
-  background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
   flex-direction: column;
-  background-image: url(src/Images/wallpaperflare.com_wallpaper.jpg);
+  background-image: url(https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uY2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
   list-style-type: none;
   @media screen and (max-width: 768px) {
     /* Custom styles for smaller screens */
   }
 
   li {
-    padding: 6px 0;
     opacity: 100%;
 
     a {

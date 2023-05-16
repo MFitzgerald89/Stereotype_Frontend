@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron&display=swap');
 
-html {
-  background-color: alpha($color: #000000);
-}
 
  form {
+  color: black;
+  text-shadow: 0 0 1px white,
+  0 0 2px white,
+  0 0 3px white,
+  0 0 4px cyan,
+  0 0 5px cyan;
   display: flex;
   border-radius: 2px;
   height: 100vh;
   justify-content: center;
   align-items:  center;
   text-align: center;
-  background-image: url(https://media.istockphoto.com/id/171271203/photo/music-in-the-heart.jpg?b=1&s=170667a&w=0&k=20&c=JRCv9oNu77kzVi_aCJUPcA9PE5vGlxs5TUiNQRxX6FU=);
-  // background-position: inherit;
-  background-size: cover;
   flex-direction: column;
-  // list-style-type: none;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/886/929/249/neon-welcome-neon-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 
   button {
     box-shadow: -1px -1px 20px black;
@@ -37,9 +40,15 @@ html {
         transition: .85s ease-in-out;
         background-size: auto; 
         font-size: 48px;
-        text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
+        text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px cyan,
+        0 0 4px cyan,
+        0 0 5px cyan;
         padding: .05em .05em .05em 0em;
-        box-shadow: -1px -1px 20px white ;         
+        box-shadow: 0 0 1px white,
+        0 0 2px white,
+        0 0 3px cyan,
+        0 0 4px cyan,
+        0 0 5px cyan ;         
       }
   }
 
@@ -48,7 +57,11 @@ html {
     opacity: 100%;
 
     input {
-      box-shadow: -1px -1px 20px black;
+      box-shadow: 0 0 2px black,
+      0 0 4px black,
+      0 0 6px black,
+      0 0 8px black,
+      0 0 10px black;
       color: white;
       border-radius: 10px;
       background: linear-gradient(to right, rgb(128, 128, 128, .5), rgb(0, 0, 0), rgb(128, 128, 128, .5));
@@ -69,9 +82,17 @@ html {
         background-position: 100% 75%;
         z-index: 1;
         color:lightblue;
-        text-shadow: 0 0 10px #f1f5f6, 0 0 20px #969898, 0 0 30px #4d0501;
-        padding: .05em .05em .05em 0em;
-        box-shadow: -1px -1px 20px white ;   
+        text-shadow: 0 0 1px white,
+        0 0 2px white,
+        0 0 3px white,
+        0 0 4px cyan,
+        0 0 5px cyan;
+        box-shadow: 0 0 1px white,
+        0 0 2px white,
+        0 0 3px white,
+        0 0 4px cyan,
+        0 0 5px cyan;
+        padding: .05em .05em .05em 0em;   
       }
     }
   }
