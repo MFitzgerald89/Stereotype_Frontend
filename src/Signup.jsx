@@ -63,16 +63,16 @@ export function Signup() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="first_four">
           <input name="first_name" type="text" className="form-control" placeholder="first name" />
         </div>
-        <div>
+        <div className="first_four">
           <input name="last_name" type="text" className="form-control" placeholder="last name" />
         </div>
-        <div>
+        <div className="first_four">
           <input name="email" type="email" className="form-control" placeholder="email" />
         </div>
-        <div>
+        <div className="first_four">
           <input name="age" type="number" className="form-control" placeholder="age" />
         </div>
         <div>
@@ -119,12 +119,63 @@ export function Signup() {
         <div className="genre" placeholder="Genre">
           <select name="genre" id="genre" onChange={() => handleGenres(event)}>
             <option defaultValue="">--Pick Genres--</option>
-            <option value="rock">Rock</option>
-            <option value="country">Country</option>
-            <option value="jazz">Jazz</option>
-            <option value="pop">Pop</option>
+            <option value="a_cappella">A cappella</option>
+            <option value="acoustic">Acoustic</option>
+            <option value="adult_Contemporary">Adult Contemporary</option>
+            <option value="alternative">Alternative</option>
+            <option value="bebop">Bebop</option>
+            <option value="big_band">Big Band</option>
+            <option value="blues">Blues</option>
+            <option value="celtic">Celtic</option>
+            <option value="christian">Christian</option>
             <option value="classical">Classical</option>
-            <option value="math rock">Math Rock</option>
+            <option value="classic_rock">Classic Rock</option>
+            <option value="country">Country</option>
+            <option value="dance">Dance</option>
+            <option value="death_core">Death Core</option>
+            <option value="disco">Disco</option>
+            <option value="doo-wop">Doo-Wop</option>
+            <option value="dubstep">DubStep</option>
+            <option value="electronic">Electronic</option>
+            <option value="emo">Emo</option>
+            <option value="experimental">Experimental</option>
+            <option value="folk">Folk</option>
+            <option value="funk">Funk</option>
+            <option value="gospel">Gospel</option>
+            <option value="hiphop">Hip Hop</option>
+            <option value="house">House</option>
+            <option value="indie_folk">Indie Folk</option>
+            <option value="instrumental">Instrumental</option>
+            <option value="jpop">J-Pop</option>
+            <option value="jazz">Jazz</option>
+            <option value="jewish">Jewish</option>
+            <option value="kpop">K-Pop</option>
+            <option value="latin">Latin</option>
+            <option value="math_rock">Math Rock</option>
+            <option value="metal">Metal</option>
+            <option value="new_wave">New Wave</option>
+            <option value="opera">Opera</option>
+            <option value="orchestra">Orchestra</option>
+            <option value="pop">Pop</option>
+            <option value="praise">Praise</option>
+            <option value="progressive">Progressive</option>
+            <option value="psychadelic">Psychadelic</option>
+            <option value="punk">Punk</option>
+            <option value="rap">Rap</option>
+            <option value="reggae">Reggae</option>
+            <option value="r&b">R & B</option>
+            <option value="rock">Rock</option>
+            <option value="salsa">Salsa</option>
+            <option value="sea_shanty">Sea Shanty</option>
+            <option value="ska">Ska</option>
+            <option value="soul">Soul</option>
+            <option value="swing">Swing</option>
+            <option value="symphony">Symphony</option>
+            <option value="synthwave">Synthwave</option>
+            <option value="techno">Techno</option>
+            <option value="trap">Trap</option>
+            <option value="underground">Underground</option>
+            <option value="waltz">Waltz</option>
           </select>
           <div>
             {genres.length > 0 ? (
